@@ -18,14 +18,14 @@ myImage.src="images/" + myRandom + ".jpg";
 myImage.onload = function() {
     myCanvas.width = myImage.width;
    myCanvas.height = myImage.height;
-    ctx.filter = 'contrast(1.4) sepia(1) drop-shadow(9px 9px 2px #e81)';
+    
     ctx.drawImage(myImage, 0, 0, myCanvas.width, myCanvas.height);
 };  
     
 }
 
 function addFilter(){
-
+/*
   // Read each pixel out of canvas
   // Array representing, r then g then b values for each pixel
   let imageData = ctx.getImageData(0, 0, myCanvas.width, myCanvas.height);
@@ -50,7 +50,10 @@ function addFilter(){
 
     
       // Write the data back to canvas
-  ctx.putImageData(imageData, 0 , 0);
+ /* ctx.putImageData(imageData, 0 , 0); */
+    
+    ctx.filter = 'blur(50px)';
+     ctx.drawImage(myImage, 0, 0, myCanvas.width, myCanvas.height);
 }
   
   
