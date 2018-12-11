@@ -8,7 +8,7 @@ myButtonAdd.addEventListener("click", addFilter,true);
 myImage.onload = function() {
     myCanvas.width = myImage.width;
    myCanvas.height = myImage.height;
-    ctx.filter = 'contrast(1.4) sepia(1) drop-shadow(9px 9px 2px #e81)';
+    
     ctx.drawImage(myImage, 0, 0, myCanvas.width, myCanvas.height);
 };  
 
@@ -18,7 +18,7 @@ myImage.src="images/" + myRandom + ".jpg";
 myImage.onload = function() {
     myCanvas.width = myImage.width;
    myCanvas.height = myImage.height;
-    
+    ctx.filter = 'contrast(1.4) sepia(1) drop-shadow(9px 9px 2px #e81)';
     ctx.drawImage(myImage, 0, 0, myCanvas.width, myCanvas.height);
 };  
     
