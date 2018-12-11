@@ -17,6 +17,7 @@ myImage.src="images/" + myRandom + ".jpg";
 myImage.onload = function() {
     myCanvas.width = myImage.width;
    myCanvas.height = myImage.height;
+    ctx.filter = 'contrast(1.4) sepia(1) drop-shadow(9px 9px 2px #e81)';
     ctx.drawImage(myImage, 0, 0, myCanvas.width, myCanvas.height);
 };  
     
@@ -43,15 +44,7 @@ function addFilter(){
     dataArray[i + 1] = 255 - dataArray[i + 1];
     dataArray[i + 2] = 255 - dataArray[i + 2];
   }*/
-    for(let i = 0; i < l ; i += 10){
-       let brightness = 4;
-          // red
-          dataArray[i] += brightness;
-          // green
-          dataArray[i + 1] += brightness;
-          // blue
-          dataArray[i + 2] += brightness;
-        }
+
 
 
     
