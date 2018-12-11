@@ -42,8 +42,6 @@ function addFilter(){
     dataArray[i] = 255 - dataArray[i];
     dataArray[i + 1] = 255 - dataArray[i + 1];
     dataArray[i + 2] = 255 - dataArray[i + 2];
-    
-    
   }
       // Write the data back to canvas
   ctx.putImageData(imageData, 0 , 0);
