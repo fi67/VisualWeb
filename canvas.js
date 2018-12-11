@@ -52,7 +52,7 @@ function addFilter(){
       // Write the data back to canvas
  /* ctx.putImageData(imageData, 0 , 0); */
     
-    ctx.filter = 'blur(50px)';
+    ctx.filter = 'sepia(1)';
      ctx.drawImage(myImage, 0, 0, myCanvas.width, myCanvas.height);
 }
   
